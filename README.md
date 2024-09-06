@@ -26,10 +26,10 @@ To indicate to some of it I would say that I **learned** and **practice**:
 
 ## Q3: What **features**, **principle**, **rules** does this project have and follow?
 
-➡️ Pure HTML&CSS without even a single line of **JavaScript**.
-➡️ Responsive
-➡️ Optimized
-➡️ Semantice
+➡️ Pure HTML&CSS without even a single line of **JavaScript**\
+➡️ Responsive\
+➡️ Optimized\
+➡️ Semantice\
 ➡️ Accessibility
 
 ## Q4: Why did I even learn these things?
