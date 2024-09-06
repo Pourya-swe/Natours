@@ -1,0 +1,112 @@
+///////////////////////
+// Section: Button
+//////////////////////
+.btn {
+  // Note: Adding the btn calss itself to link state so it takes the properties as well.
+  &,
+  &:link,
+  &:visited {
+    display: inline-block;
+    position: relative;
+    text-transform: uppercase;
+    text-decoration: none;
+    padding: 1.5rem 4rem;
+    border-radius: 10rem;
+    font-size: $default-font-size;
+
+    /* Givin animation to all properties and we have put this in initail state of the buttom which are "link" and "visited" state */
+    /* This is the second type of making an element animated */
+    transition: all 0.2s;
+
+    // Note: Change for <button> element, not the anchor tag
+    cursor: pointer;
+    border: none;
+  }
+
+  &:hover {
+    transform: translateY(-0.3rem);
+    /* x-offset y-offset blur color */
+    box-shadow: 0 1rem 2rem rgb($color-balck, 0.2);
+
+    /* We want something happens to the "after" sudo element when hover the button */
+    &::after {
+      transform: scaleX(1.4) scaleY(1.6);
+      opacity: 0;
+    }
+  }
+
+  &:active,
+  &:focus {
+    // Note: For the button not the link we remove the the ouline
+    outline: none;
+    transform: translateY(-0.1rem);
+    box-shadow: 0 0.5rem 1rem rgb($color-balck, 0.2);
+  }
+
+  &--white {
+    background-color: $color-white;
+    color: $color-grey-dark;
+
+    &::after {
+      background-color: $color-white;
+      transition: all 0.4s;
+    }
+  }
+
+  &--green {
+    background-color: $color-primary;
+    color: $color-white;
+
+    &::after {
+      background-color: $color-white;
+      transition: all 0.4s;
+    }
+  }
+
+  /* After sudo element is going to add a virtual element after the actual element */
+  &::after {
+    content: "";
+    display: inline-block;
+    /* It has to occupy the entire dimention of the actual element */
+    height: 100%;
+    width: 100%;
+    border-radius: 10rem;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+  }
+
+  &--animated {
+    /* animation-name duration timing delay */
+    animation: moveInBottom 0.5s ease-out 0.7s;
+    /* Already applies the first state of the animation before even it starts */
+    animation-fill-mode: backwards;
+  }
+}
+
+.btn-text {
+  &:link,
+  &:visited {
+    font-size: $default-font-size;
+    color: $color-primary;
+    // To be able to use box model properties
+    display: inline-block;
+    text-decoration: none;
+    border-bottom: 1px solid $color-primary;
+    padding: 3px;
+    transition: all 0.2s;
+  }
+
+  &:hover {
+    background-color: $color-primary;
+    color: $color-white;
+    box-shadow: 0 1rem 2rem rgb($color-balck, 0.15);
+    transform: translateY(-2px);
+  }
+
+  &:active {
+    box-shadow: 0 0.5rem 1rem rgb($color-balck, 0.15);
+    transform: translateY(0);
+  }
+}

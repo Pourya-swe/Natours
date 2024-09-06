@@ -1,0 +1,45 @@
+////////////////////
+// Section: Document
+////////////////////
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+// Note: Order of the media queries - Mixins - matters
+/* The Root font size is set in this selector */
+html {
+  /* 1 = 10px, 10 / 16px =  0.625 * 100 */
+  /* Now 1rem is 10px, we do that to make our life easier :) */
+  /* We change to percentage here to allow users to set their own font-size as well */
+  /* font-size: 10px; */
+  font-size: 62.5%;
+
+  @include respond(tab-land) {
+    // wdith:  < 1200px?
+    font-size: 56.25%;
+  }
+
+  @include respond(tab-port) {
+    // wdith:  < 900px?
+    font-size: 50%;
+  }
+
+  @include respond(big-desktop) {
+    // wdith:  > 1800px?
+    font-size: 75%;
+  }
+}
+
+body {
+  box-sizing: border-box;
+  padding: 2rem;
+
+  @include respond(tab-port) {
+    // wdith:  < 900px?
+    padding: 0;
+  }
+}
