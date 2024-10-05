@@ -1,10 +1,8 @@
-# A professional landing page which utilizes advance HTML&CSS knowledge.
+# Natours
 
-## Q1: How did I come up with this project?
+**Introduction:** A professional landing page which utilizes advance HTML&CSS knowledge.
 
-I basically followed along a course online to be able to create this project with the help of the instructor of that course.
-
-## Q2: What did I learn and practice here in this project?
+## Q1: What did I learn and practice here in this project?
 
 To indicate to some of it I would say that I **learned** and **practice**:
 
@@ -24,7 +22,7 @@ To indicate to some of it I would say that I **learned** and **practice**:
 - SASS - **Variables**, **Nesting**, **Operators**, **Partials & Imports**, **Mixins**, **Functions**, **Extends**, **Control Directives** -.
 - SASS - **SCSS** Syntax -.
 
-## Q3: What **features**, **principle**, **rules** does this project have and follow?
+## Q2: What **features**, **principle**, **rules** does this project have and follow?
 
 ➡️ Pure HTML&CSS without even a single line of **JavaScript**\
 ➡️ Responsive\
@@ -32,12 +30,7 @@ To indicate to some of it I would say that I **learned** and **practice**:
 ➡️ Semantice\
 ➡️ Accessibility
 
-## Q4: Why did I even learn these things?
-
-Well, I always fond of computer science and programming, and to be honest, I want to excel in this realm
-especially in front-end and back-end development, so I have started my journey from here.
-
-## Q5: How to connect with me for any inquires related to these stuff?
+## Q3: How to connect with me for any inquires related to these stuff?
 
 pourya.swe@gmail.com\
 [pouryavahedi.com](https://pouryavahedi.com/)
